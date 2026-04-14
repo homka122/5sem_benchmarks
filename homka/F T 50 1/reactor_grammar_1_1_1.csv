@@ -1,0 +1,4 @@
+algo,graph,grammar,s_edges,ram_kb,time_sec
+F T 50 1,reactor,grammar_1_1_1,11763,303416.0,47.72605490684509
+F T 50 1,reactor,grammar_1_1_1,11763,302732.0,47.74348282814026
+F T 50 1,reactor,grammar_1_1_1,11763,305656.0,47.15825390815735

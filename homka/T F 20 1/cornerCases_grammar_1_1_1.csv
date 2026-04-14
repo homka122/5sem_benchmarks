@@ -1,0 +1,4 @@
+algo,graph,grammar,s_edges,ram_kb,time_sec
+T F 20 1,cornerCases,grammar_1_1_1,149,294696.0,0.17509150505065918
+T F 20 1,cornerCases,grammar_1_1_1,149,165200.0,0.17476415634155273
+T F 20 1,cornerCases,grammar_1_1_1,149,165260.0,0.1769864559173584

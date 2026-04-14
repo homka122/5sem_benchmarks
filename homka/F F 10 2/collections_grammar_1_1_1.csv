@@ -1,0 +1,4 @@
+algo,graph,grammar,s_edges,ram_kb,time_sec
+F F 10 2,collections,grammar_1_1_1,48,214900.0,7.316774845123291
+F F 10 2,collections,grammar_1_1_1,48,215824.0,7.423809051513672
+F F 10 2,collections,grammar_1_1_1,48,214628.0,7.3302083015441895

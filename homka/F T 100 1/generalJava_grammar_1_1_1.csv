@@ -1,0 +1,4 @@
+algo,graph,grammar,s_edges,ram_kb,time_sec
+F T 100 1,generalJava,grammar_1_1_1,86,566928.0,7.257955551147461
+F T 100 1,generalJava,grammar_1_1_1,86,239040.0,7.06481146812439
+F T 100 1,generalJava,grammar_1_1_1,86,239204.0,7.020528316497803

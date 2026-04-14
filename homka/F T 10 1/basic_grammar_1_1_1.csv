@@ -1,0 +1,4 @@
+algo,graph,grammar,s_edges,ram_kb,time_sec
+F T 10 1,basic,grammar_1_1_1,114,165440.0,0.43597841262817383
+F T 10 1,basic,grammar_1_1_1,114,165548.0,0.4407820701599121
+F T 10 1,basic,grammar_1_1_1,114,165112.0,0.44286513328552246
