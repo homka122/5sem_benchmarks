@@ -24,7 +24,42 @@ This project evaluates the impact of grouping strategies (RSM and Automata) on e
 - **Execution time** (seconds)
 - **RAM usage** (KB)
 
-## Results
+## Results Summary
+
+### Small Graphs — Number of Edges by Context Count and Depth
+
+#### Depth 1
+
+| Graph       | 10 ctx | 20 ctx | 50 ctx | 100 ctx |
+|-------------|--------|--------|--------|---------|
+| basic       | 114    | 114    | 114    | 114     |
+| cornerCases | 149    | 149    | 149    | 149     |
+| generalJava | 86     | 86     | 86     | 86      |
+| collections | 63     | 63     | 63     | 63      |
+
+#### Depth 2
+
+| Graph       | 10 ctx | 20 ctx |
+|-------------|--------|--------|
+| basic       | 80     | 80     |
+| cornerCases | 96     | 96     |
+| generalJava | 60     | 60     |
+| collections | 48     | 48     |
+
+Deeper context analysis produces more compact representations.
+
+### Large Graphs — Number of Edges (Depth 1)
+
+| Graph                    | 1 ctx  | 10 ctx | 20 ctx | 50 ctx |
+|--------------------------|--------|--------|--------|--------|
+| reactor                  | 12872  | 11877  | 11826  | 11763  |
+| org_jivesoftware_openfire| 44859  | 43033  | 42954  | 42900  |
+| com_fasterxml_jackson    | 639943 | 585832 | 584979 | 583947 |
+| org_apache_jackrabbit    | 1183149| 1058934| 1048125| 1048904|
+
+Increasing the number of contexts reduces the number of edges:
+
+> **Note:** For large graphs with >400 fields, only RSM-enabled configurations (`f t`, `t t`) were tested. Configurations without RSM (`f f`, `t f`) were skipped because field grouping was enabled by default to avoid excessive slowdown.
 
 ### Depth 1 — Small Graphs (10 contexts)
 
@@ -62,3 +97,4 @@ This project evaluates the impact of grouping strategies (RSM and Automata) on e
 2. The speedup ratio (×N) shows improvement compared to the worst strategy
 3. Larger contexts (50, 100) generally show more significant benefits from grouping
 4. RAM usage follows similar patterns to execution time
+5. For large graphs with >400 fields, field grouping was enabled by default — configurations without RSM (`f f`, `t f`) were skipped to avoid excessive slowdown
