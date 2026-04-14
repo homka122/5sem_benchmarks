@@ -59,7 +59,7 @@ Deeper context analysis produces more compact representations.
 
 Increasing the number of contexts reduces the number of edges:
 
-> **Note:** For large graphs with >400 fields, only RSM-enabled configurations (`f t`, `t t`) were tested. Configurations without RSM (`f f`, `t f`) were skipped because field grouping was enabled by default to avoid excessive slowdown.
+> **Note:** For large graphs with >400 fields, only RSM-enabled configurations (`f t`, `t t`) were tested. Configurations without RSM (`f f`, `t f`) were skipped because field grouping was enabled by default to avoid excessive slowdown. This is work for future anaylises.
 
 ### Depth 1 — Small Graphs (10 contexts)
 
@@ -97,4 +97,4 @@ Increasing the number of contexts reduces the number of edges:
 2. The speedup ratio (×N) shows improvement compared to the worst strategy
 3. Larger contexts (50, 100) generally show more significant benefits from grouping
 4. RAM usage follows similar patterns to execution time
-5. For large graphs with >400 fields, field grouping was enabled by default — configurations without RSM (`f f`, `t f`) were skipped to avoid excessive slowdown
+5. For large graphs with >400 fields, field grouping was enabled by default — configurations without RSM (`f f`, `t f`) were skipped to avoid excessive slowdown. This is work for future anaylises.
