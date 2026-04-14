@@ -1,6 +1,6 @@
 # Benchmark: Influence of Grouping on Performance
 
-This project evaluates the impact of grouping strategies (RSM and Automata) on execution time and RAM usage when building graph structures.
+This project evaluates the impact of grouping strategies (RSM and Automata) on execution time and RAM usage when finding pairs of reachable nodes with Interlyved Dick Language constraint.
 
 ## Experiment Description
 
