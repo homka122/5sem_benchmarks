@@ -41,7 +41,7 @@ This project evaluates the impact of grouping strategies (RSM and Automata) on e
 
 ## Results Summary
 
-### Small Graphs — Number of reachable pairs of nodes by Context Count and Depth
+### Small Graphs — Number of pairs of reachable nodes by Context Count and Depth
 
 #### Depth 1
 
@@ -63,7 +63,7 @@ This project evaluates the impact of grouping strategies (RSM and Automata) on e
 
 Deeper context analysis produces more compact representations.
 
-### Large Graphs — Number of reachable pairs of nodes (Depth 1)
+### Large Graphs — Number of pairs of reachable nodes (Depth 1)
 
 | Graph                    | 1 ctx  | 10 ctx | 20 ctx | 50 ctx |
 |--------------------------|--------|--------|--------|--------|
@@ -72,7 +72,7 @@ Deeper context analysis produces more compact representations.
 | com_fasterxml_jackson    | 639943 | 585832 | 584979 | 583947 |
 | org_apache_jackrabbit    | 1183149| 1058934| 1048125| 1048904|
 
-Increasing the number of contexts reduces the number of reachable pairs of nodes.
+Increasing the number of contexts reduces the number of pairs of reachable nodes.
 
 > **Note:** For large graphs with >400 fields, only RSM-enabled configurations (`f t`, `t t`) were tested. Configurations without RSM (`f f`, `t f`) were skipped because field grouping was enabled by default to avoid excessive slowdown. This is work for future anaylises.
 
