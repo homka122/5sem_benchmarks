@@ -8,9 +8,24 @@ This project evaluates the impact of grouping strategies (RSM and Automata) on e
 
 - **Depth**: Context depth (1 or 2)
 - **Number of contexts**: 10, 20, 30 (small) or 50, 100 (large)
+
 - **Graphs**:
   - **Small**: `collections`, `cornerCases`, `generalJava`, `basic`
   - **Large**: `com_fasterxml_jackson`, `org_apache_jackrabbit`, `org_jivesoftware_openfire`, `reactor`
+
+
+### Graph Datasets info
+
+| Graph                    | Vertices | Edges  |
+|--------------------------|----------|--------|
+| basic                    | 230      | 274    |
+| collections              | 165      | 175    |
+| cornerCases              | 245      | 295    |
+| generalJava              | 155      | 186    |
+| reactor                  | 26997    | 45309  |
+| com_fasterxml_jackson    | 243764   | 586934 |
+| org_jivesoftware_openfire| 298553   | 551124 |
+| org_apache_jackrabbit    | 362179   | 953587 |
 
 ### Grouping Strategies
 
